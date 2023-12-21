@@ -1,0 +1,24 @@
+:root {
+    --hero-background-color: black;
+  }
+  
+.hero{
+    /* width: 100%; */
+    background-color: var(--hero-background-color);
+    height: 270px;
+    top: 74px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+.img {
+    width: 212px;
+    height: 212px;
+    }
+  
+.hero-text {
+ font-family: Poppins;
+  }
+  
