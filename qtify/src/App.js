@@ -5,8 +5,8 @@ import styles from './App.module.css'
 import { useEffect, useState } from 'react'
 import { fetchTopAlbums, fetchNewAlbums, fetchSongs } from './api/api'
 import Section from './components/Section/Section.jsx'
-// import FilterSection from './components/FilterSection/FilterSection.jsx'
-import FilterSection from './components/FilterSection/FilterSection.jsx'
+import FilterSection from './components/FilterSection/FilterSection.jsx';
+
 function App() {
 
   const [topAlbumSongs, setTopAlbumSongs] = useState([])
@@ -69,7 +69,7 @@ function App() {
     try {
       const newAlbumSongs = await fetchNewAlbums()
       setNewAlbumSongs(newAlbumSongs);
-      setFilteredDataValues(newAlbumSongs);
+      // setFilteredDataValues(newAlbumSongs);
     }
     catch (error) {
       console.log(error)
@@ -80,7 +80,7 @@ function App() {
   const generateFilterSongs = async () => {
     try {
       const newAlbumSongs = await fetchSongs()
-      setNewAlbumSongs(newAlbumSongs);
+      // setNewAlbumSongs(newAlbumSongs);
       setFilteredDataValues(newAlbumSongs);
     }
     catch (error) {
@@ -98,7 +98,7 @@ function App() {
     generateTopAlbumSongs();
     generateNewAlbumSongs();
     generateFilterSongs();
-   // setFilteredDataValues(newAlbumSongs);
+    // setFilteredDataValues(newAlbumSongs);
 
   }, [])
   
