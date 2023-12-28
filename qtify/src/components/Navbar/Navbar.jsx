@@ -3,7 +3,7 @@ import Logo from "../Logo/Logo";
 import Search from "../Search/Search";
 import Button from "../Button/Button";
 import styles from "./Navbar.module.css";
-import HeroSection from "../HeroSection/HeroSection";
+
 function Navbar(){
 
     return(
@@ -16,8 +16,7 @@ function Navbar(){
             <Button>
                 Give Feedback
             </Button>
-        </nav>
-        <HeroSection/>
+        </nav>  
      </div>
     )
 }
